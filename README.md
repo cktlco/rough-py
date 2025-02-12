@@ -6,10 +6,11 @@
 
  You'll use `rough-py` to **programmatically generate graphics** for documentation or data visualization.
 
-
-
-![1. Install rough-py, 2. Draw some shapes, 3. Output SVG image](examples/example-quickstart.svg)
-
+<picture>
+    <img src="examples/example-quickstart.svg" 
+        alt="1. Install rough-py, 2. Draw some shapes, 3. Output SVG image" 
+        width="100%" />
+</picture>
 
 ## 🖌️ Install
 ```bash
