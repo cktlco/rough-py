@@ -1,2 +1,6 @@
 # rough-py Fill and Stroke Style Gallery
-![](example-stylegallery.svg)
+<picture>
+    <img src="example-stylegallery.svg" 
+        alt="rough-py Fill and Stroke Style Gallery" 
+        width="100%" />
+</picture>
