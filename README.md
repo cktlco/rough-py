@@ -1,6 +1,6 @@
 
 <picture>
-    <img src="resources/images/rough-py.svg" 
+    <img src="https://raw.githubusercontent.com/cktlco/rough-py/main/resources/images/rough-py.svg" 
         alt="rough-py"
         width="500px" />
 </picture>
@@ -13,7 +13,7 @@
  You'll use `rough-py` to **programmatically generate graphics** for documentation or data visualization.
 
 <picture>
-    <img src="examples/example-quickstart.svg" 
+    <img src="https://raw.githubusercontent.com/cktlco/rough-py/main/examples/example-quickstart.svg"
         alt="1. Install rough-py, 2. Draw some shapes, 3. Output SVG image" 
         width="800px" />
 </picture>
@@ -27,7 +27,7 @@ No other python packages or third-party dependencies needed. Optionally, you can
 
 ## 🖍️ Use
 <picture>
-    <img src="examples/example-readme.svg" 
+    <img src="https://raw.githubusercontent.com/cktlco/rough-py/main/examples/example-readme.svg" 
         alt="rough-py API code usage example" 
         width="800px" />
 </picture>
@@ -65,19 +65,19 @@ with open("/tmp/rough-example.svg", "w") as f:
 
 
 ## Use the full API
-🚀 [API Documentation](API.md)
+🚀 [API Documentation](https://github.com/cktlco/rough-py/blob/main/API.md)
 
-📚 [Examples Gallery](examples/examples.md)
+📚 [Examples Gallery](https://github.com/cktlco/rough-py/examples/examples.md)
 
-🎨 [Fill and Stroke Style Gallery](examples/example-stylegallery.md)
+🎨 [Fill and Stroke Style Gallery](https://github.com/cktlco/rough-py/examples/example-stylegallery.md)
 
-Still desperate? There are even more examples ([1](tests/test_roughjs_visual_tests.py), [2](tests/test_detailed_shapes.py), [3](tests/test_simple_svg_paths.py)) in the `tests/` directory.
+Still desperate? There are even more examples ([1](https://github.com/cktlco/rough-py/tests/test_roughjs_visual_tests.py), [2](https://github.com/cktlco/rough-py/tests/test_detailed_shapes.py), [3](https://github.com/cktlco/rough-py/tests/test_simple_svg_paths.py)) in the `tests/` directory.
 
 ## Limitations
 
 🚫  **No JavaScript-style Interactivity**
 
-🚧  **Will not roughen existing SVG files**. For those too proud to accept that, review [`tests/test_roughen_svg.py`](tests/test_roughen_svg.py) which implements a functional but work-in-progress SVG file "roughener".
+🚧  **Will not roughen existing SVG files**. For those too proud to accept that, review [`tests/test_roughen_svg.py`](https://github.com/cktlco/rough-py/tests/test_roughen_svg.py) which implements a functional but work-in-progress SVG file "roughener".
 
 
 ## Questions or Issues?

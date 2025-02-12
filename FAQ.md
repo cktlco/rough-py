@@ -36,7 +36,7 @@ Alas, your new rough lifestyle comes at a cost. Instead of being able to represe
 
 ## Why does the syntax have some snake_case and some camelCase?
 
-A goal was to match the original Rough.js JavaScript API as much as possible, so those things try to use camelCase, otherwise snake case is used to adhere to python conventions.
+A goal was to match the original Rough.js JavaScript API as much as possible, so those things try to use camelCase, otherwise snake_case is used to adhere to python conventions.
 
 
 ## How to build and develop with the repo locally?
