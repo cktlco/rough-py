@@ -364,9 +364,9 @@ def curve(points: Union[List[Point], List[List[Point]]], o: ResolvedOptions) -> 
                 amt2 = 1.5 * (
                     1.0 + (o.roughness if o.roughness is not None else 1.0) * 0.22
                 )
-            under = curveWithOffset(pset, amt1, o)
+            under = curveWithOffset(pset, amt1, o)  # type: ignore
             if not o.disableMultiStroke:
-                over2 = curveWithOffset(pset, amt2, cloneOptionsSeed(o))
+                over2 = curveWithOffset(pset, amt2, cloneOptionsSeed(o))   # type: ignore
             else:
                 over2 = []
             # Merge the ops, skipping the move operation on subsequent segments

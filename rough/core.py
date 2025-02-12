@@ -254,6 +254,9 @@ class OpSet:
         self.ops = ops
         self.size: Tuple[float, float] | None = None
         self.path: str | None = None
+        self.width: float | None = None
+        self.height: float | None = None
+        self.extras: dict = {}
 
 
 class Drawable:

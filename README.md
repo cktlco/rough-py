@@ -1,4 +1,10 @@
-![rough-py](resources/images/rough-py.svg)
+
+<picture>
+    <img src="resources/images/rough-py.svg" 
+        alt="rough-py"
+        width="500px" />
+</picture>
+
 
 > Python port of Rough.js 
 
@@ -6,9 +12,11 @@
 
  You'll use `rough-py` to **programmatically generate graphics** for documentation or data visualization.
 
-
-
-![1. Install rough-py, 2. Draw some shapes, 3. Output SVG image](examples/example-quickstart.svg)
+<picture>
+    <img src="examples/example-quickstart.svg" 
+        alt="1. Install rough-py, 2. Draw some shapes, 3. Output SVG image" 
+        width="800px" />
+</picture>
 
 ## 🖌️ Install
 ```bash
@@ -18,7 +26,11 @@ pip install rough
 No other python packages or third-party dependencies needed. Optionally, you can `pip install fonttools` to enable embedding font outlines into your SVG output.
 
 ## 🖍️ Use
-![](examples/example-readme.svg)
+<picture>
+    <img src="examples/example-readme.svg" 
+        alt="rough-py API code usage example" 
+        width="800px" />
+</picture>
 
 ```python
 from rough import canvas, Options
@@ -53,11 +65,11 @@ with open("/tmp/rough-example.svg", "w") as f:
 
 
 ## Use the full API
-🚀 [API DOCUMENTATION](API.md)
+🚀 [API Documentation](API.md)
 
-📚 [EXAMPLES GALLERY](examples/examples.md)
+📚 [Examples Gallery](examples/examples.md)
 
-🎨 [FILL AND STROKE STYLE GALLERY](examples/example-stylegallery.md)
+🎨 [Fill and Stroke Style Gallery](examples/example-stylegallery.md)
 
 Still desperate? There are even more examples ([1](tests/test_roughjs_visual_tests.py), [2](tests/test_detailed_shapes.py), [3](tests/test_simple_svg_paths.py)) in the `tests/` directory.
 

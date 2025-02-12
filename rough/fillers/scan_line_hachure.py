@@ -44,7 +44,7 @@ def polygon_hachure_lines(
                 continue
 
             segments = []
-            running_winding = 0
+            running_winding: float = 0
             prev_x: Optional[float] = None
             for cx, dW in crossing_data:
                 inside_now = running_winding != 0
