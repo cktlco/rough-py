@@ -8,7 +8,9 @@
 
 
 
-![1. Install rough-py, 2. Draw some shapes, 3. Output SVG image](examples/example-quickstart.svg)
+<img src="examples/example-quickstart.svg" 
+     alt="1. Install rough-py, 2. Draw some shapes, 3. Output SVG image" 
+     width="100%" />
 
 ## 🖌️ Install
 ```bash
@@ -18,7 +20,9 @@ pip install rough
 No other python packages or third-party dependencies needed. Optionally, you can `pip install fonttools` to enable embedding font outlines into your SVG output.
 
 ## 🖍️ Use
-![](examples/example-readme.svg)
+<img src="examples/example-readme.svg" 
+     alt="README python example usage codeblock" 
+     width="100%" />
 
 ```python
 from rough import canvas, Options
