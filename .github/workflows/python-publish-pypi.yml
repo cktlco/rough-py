@@ -1,0 +1,65 @@
+name: Upload Python Package
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  release-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      # Install Poetry
+      - name: Install Poetry
+        run: |
+          curl -sSL https://install.python-poetry.org | python3 -
+          export PATH="/home/runner/.local/bin:$PATH"
+      
+      # Install project dependencies (if needed)
+      - name: Install project dependencies
+        run: |
+          export PATH="/home/runner/.local/bin:$PATH"
+          poetry install
+      
+      # Build release distributions using Poetry
+      - name: Build release distributions
+        run: |
+          export PATH="/home/runner/.local/bin:$PATH"
+          poetry build
+      
+      # Upload the artifacts
+      - name: Upload distributions
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-dists
+          path: dist/
+
+  pypi-publish:
+    runs-on: ubuntu-latest
+    needs: release-build
+    permissions:
+      id-token: write
+    environment:
+      name: pypi
+
+    steps:
+      - name: Retrieve release distributions
+        uses: actions/download-artifact@v4
+        with:
+          name: release-dists
+          path: dist/
+
+      - name: Publish release distributions to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          packages-dir: dist/
