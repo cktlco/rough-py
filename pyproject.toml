@@ -1,7 +1,7 @@
 
 [tool.poetry]
 name = "rough"
-version = "1.2"
+version = "1.4"
 description = "High-quality 'hand drawn' vector graphics. Python port of Rough.js."
 authors = ["cktl.co"]
 license = "MIT"
