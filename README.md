@@ -81,7 +81,7 @@ Still desperate? There are even more examples ([1](https://github.com/cktlco/rou
 
 
 ## Questions or Issues?
-🔍 See the [FAQ page](/FAQ.md).
+🔍 See the [FAQ page](https://github.com/cktlco/rough-py/blob/main/FAQ.md).
 
 Freely use the **Discussions** tab above for general questions, or use the **Issues** tab to report a problem.
 
