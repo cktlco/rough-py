@@ -1,0 +1,27 @@
+
+[tool.poetry]
+name = "rough"
+version = "0.1.0"
+description = "High-quality 'hand drawn' vector graphics. Python port of Rough.js."
+authors = ["cktl.co"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/cktlco/rough-py"
+repository = "https://github.com/cktlco/rough-py"
+keywords = ["svg", "graphics", "rough.js", "python"]
+packages = [
+  { include = "rough" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+numpy = "^2.2.2"
+fonttools = "^4.56.0"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.15.0"
+pytest = "^8.3.4"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
