@@ -1,4 +1,10 @@
-![rough-py](resources/images/rough-py.svg)
+
+<picture>
+    <img src="resources/images/rough-py.svg" 
+        alt="rough-py"
+        width="500px" />
+</picture>
+
 
 > Python port of Rough.js 
 
