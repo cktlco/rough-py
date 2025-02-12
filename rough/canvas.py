@@ -402,7 +402,7 @@ class RoughCanvas:
                 if bh < 1e-9:
                     bh = 1.0
 
-                colorList = o.fill if fill_is_gradient else o.stroke
+                colorList: str | list = (o.fill if fill_is_gradient else o.stroke) or ""
 
                 angleDeg = getattr(o, "gradientAngle", 0.0)
                 aRad = math.radians(angleDeg)

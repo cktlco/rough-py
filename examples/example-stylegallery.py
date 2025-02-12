@@ -99,8 +99,11 @@ for row_idx in range(row_count_fill):
 
         # White background rect behind label text
         c.rectangle(
-            x + 15, y + 28, 135, 25,
-            Options(fill="white", fillStyle="solid", strokeWidth=0, roughness=0)
+            x + 15,
+            y + 28,
+            135,
+            25,
+            Options(fill="white", fillStyle="solid", strokeWidth=0, roughness=0),
         )
 
         label_str = f"{fs} {ang}° wt={fw} gap={hg}"
@@ -118,6 +121,7 @@ for row_idx in range(row_count_fill):
 # Stroke Patterns on a Star Polygon
 ########################################################################
 
+
 def make_star(cx, cy, outer_r, inner_r, n=5):
     points = []
     angle_step = math.pi / n
@@ -128,6 +132,7 @@ def make_star(cx, cy, outer_r, inner_r, n=5):
         py = cy + r * math.sin(angle)
         points.append((px, py))
     return points
+
 
 STAR_OUTER_R = 40
 STAR_INNER_R = 18
@@ -198,9 +203,12 @@ for row_idx in range(row_count_stroke):
 
 # draw white background
 c.rectangle(
-    30, 20, CANVAS_WIDTH, CANVAS_HEIGHT + 100,
+    30,
+    20,
+    CANVAS_WIDTH,
+    CANVAS_HEIGHT + 100,
     Options(fill="white", fillStyle="solid", stroke="none"),
-    z_index=-999  # ensure it's drawn behind everything else
+    z_index=-999,  # ensure it's drawn behind everything else
 )
 
 svg_data = c.as_svg(CANVAS_WIDTH, CANVAS_HEIGHT, auto_fit=True)

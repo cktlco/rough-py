@@ -637,7 +637,7 @@ class RoughGenerator:
                 storing the resulting polygonal contours in self.contours.
                 """
 
-                def __init__(self, glyphSet):
+                def __init__(self, glyphSet) -> None:
                     super().__init__(glyphSet)
                     self.contours: List[List[Point]] = []
                     self.current: List[Point] = []
@@ -837,8 +837,9 @@ class RoughGenerator:
         Fallback text => uses a simple <text> element at (x, y).
         The alignment offsets x,y as needed to match 'align'/'valign'.
         """
-        approx_width = len(textStr) * (o.fontSize * 0.6)  # naive estimate
-        approx_height = float(o.fontSize)
+        font_size: float = o.fontSize or 1.0
+        approx_width = len(textStr) * (font_size * 0.6)  # naive estimate
+        approx_height = font_size
 
         # Adjust (x,y) based on horizontal and vertical alignment
         shift_x = 0.0

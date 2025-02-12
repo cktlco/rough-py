@@ -82,21 +82,6 @@ arrow()
 box("3. Output SVG image", "#40E0D0")
 
 
-# add clickable link at bottom
-# note the use of the generator directly instead of canvas, since
-# canvas calls draw directly skipping the chance for it to be wrapped with <a> tags
-c.ctx.resetTransform()
-c.ctx.translate(120, 105)
-link_text = c.gen.text(
-    27,
-    12,
-    "[view code]",
-    align="right",
-    valign="middle",
-    options=Options(fontSize=3, fill="#55F", fontFamily="monospace"),
-)
-c.link(link_text, "/examples/example-quickstart.py")
-
 # render the canvas as SVG (Scalable Vector Graphics) code
 svg_data: str = c.as_svg(600, 480)
 
