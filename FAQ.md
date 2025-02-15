@@ -37,13 +37,3 @@ Alas, your new rough lifestyle comes at a cost. Instead of being able to represe
 ## Why does the syntax have some snake_case and some camelCase?
 
 A goal was to match the original Rough.js JavaScript API as much as possible, so those things try to use camelCase, otherwise snake_case is used to adhere to python conventions.
-
-
-## How to build and develop with the repo locally?
-
-1. Clone the repo
-2. Install [poetry](https://python-poetry.org/docs/#installation)
-3. `poetry install` to install `rough` and any dependencies locally
-4. `poetry run python ...` should be all you need to run any of the repo scripts
-5. `poetry build` to build a new version of the library
-6. There are *many* test scenarios in the `tests/` directory to check results against, including several which exactly match the Rough.js ["visual tests"](https://github.com/rough-stuff/rough/tree/master/visual-tests/canvas).
